@@ -1,10 +1,7 @@
-def calc_power(voltage, current):
-	return voltage * current
+from ohms_law import calc_current, calc_power
 
-result = calc_power(12, 6)
-print("Power =", result, "watts")
+power1 =calc_power(12, 6)
+print("Power 1=", power1, "W")
 
-result = calc_power(24, 12)
-print("Power =", result, "watts")
-
-print(calc_power.__doc__)
+power2 =calc_power(24, 12)
+print("Power 2=", power2, "W")
